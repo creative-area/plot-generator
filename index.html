@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<title>Achtung! Cthulhu - Plot Generator</title>
+</head>
+<body>
+	<h1>
+		Achtung! Cthulhu - Plot Generator
+	</h1>
+
+	<button id="generate-plot">Generate New Plot</button>
+
+	<div id="plot"></div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="jquery-plot-generator.js"></script>
+	<script src="data-achtung-cthulhu.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('#plot').generatePlot(AchtungCthulhu_PlotData, ['antagonist', 'plot', 'character']);
+
+		$('#generate-plot').on('click', function(e){
+			e.preventDefault();
+			$('#plot').generatePlot(AchtungCthulhu_PlotData, ['antagonist', 'plot', 'character']);
+		});
+
+	});
+	</script>
+	</body>
+</html>
