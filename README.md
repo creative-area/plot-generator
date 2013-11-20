@@ -22,7 +22,7 @@ The data need to be formated like this:
 
 Each table can be a __data table__ (with a `roll` option) or a __group of tables__ (with a `group` option). Each type of table can have an optional `label` option.
 
-__ Data table __
+__Data table__
 
 	'table_key': {
 		'label': 'Label display before the roll text (optional)',
@@ -37,7 +37,7 @@ __ Data table __
 		]
 	}
 
-__ Group Table __
+__Group Table__
 
 	'another_table_key': {
 		'label': 'Another Label (optional)',
